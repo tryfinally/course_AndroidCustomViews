@@ -1,8 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
     <item android:id="@+id/mnu_about"
         android:title="@string/app_name"
         />
+
+    <item android:id="@+id/mnu_grow"
+        android:icon="@android:drawable/ic_input_add"
+        android:title="Grow"
+        app:showAsAction="always"
+        />
+
     <item android:title="Comms" >
     <menu>
         <group android:id="@+id/mnu_edit_grp" >
@@ -17,7 +25,6 @@
     </item>
 
     <item android:id="@+id/mnu_map"
-        android:icon="@android:drawable/ic_dialog_map"
         android:title="map" />
 
 </menu>

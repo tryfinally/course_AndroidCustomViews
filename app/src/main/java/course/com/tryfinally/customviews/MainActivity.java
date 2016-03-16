@@ -3,8 +3,8 @@ package course.com.tryfinally.customviews;
 import android.app.AlertDialog;
 import android.app.TimePickerDialog;
 import android.content.DialogInterface;
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
@@ -14,6 +14,7 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     private CirclesView circlesView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -37,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
         MenuInflater inflater = getMenuInflater();
         inflater.inflate(R.menu.main_menu, menu);
 
-        menu.add("Dyna");
+        menu.add("Dynamic Item");
 
 
         return true;
@@ -48,6 +49,9 @@ public class MainActivity extends AppCompatActivity {
         switch (item.getItemId()) {
             case R.id.mnu_about:
                 showAbout();
+                return true;
+            case R.id.mnu_grow:
+                growCirclesBy(16);
                 return true;
             case R.id.mnu_call:
                 new TimePickerDialog(this, null, 19, 20, false).show();
