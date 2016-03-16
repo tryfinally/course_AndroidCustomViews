@@ -1,0 +1,15 @@
+<resources>
+    <declare-styleable name="Circles">
+        <attr name="lineWidth" format="dimension" />
+        <attr name="lineColor" format="color" />
+        <attr name="circleRadius" format="enum">
+            <enum name="Small" value="1"/>
+            <enum name="Medium" value="2" />
+            <enum name="Big" value="4" />
+        </attr>
+        <attr name="image" format="reference" />
+    </declare-styleable>
+
+
+
+</resources>

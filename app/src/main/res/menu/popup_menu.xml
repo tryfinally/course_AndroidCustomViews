@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="First"
+        android:icon="@android:drawable/ic_dialog_email"
+        android:id="@+id/mnu_first" />
+
+    <item android:title="Second"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:id="@+id/mnu_second" />
+
+    <item android:title="Sub Menu">
+        <menu>
+            <item android:title="AA" />
+            <item android:title="BB" />
+
+        </menu>
+    </item>
+    <item android:title="First"
+        android:icon="@android:drawable/ic_btn_speak_now"
+        android:id="@+id/mnu_third" />
+
+    <group android:id="@+id/mnu_grp_1">
+        <item android:title="last" />
+        <item android:title="after last"/>
+    </group>
+
+</menu>
